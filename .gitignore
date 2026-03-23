@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# =========================
+# 自定义规则：README 文件管理
+# =========================
+
+# 1. 忽略所有层级目录下的 readme 文件（兼容大小写）
+**/README.md
+**/readme.md
+**/Readme.md
+
+# 2. 例外规则：强制保留根目录（/）下的 readme 文件
+!/README.md
+!/readme.md
+!/Readme.md
+
+# =========================
+# 忽略 macOS 系统生成的隐藏文件
+# =========================
+.DS_Store
+**/.DS_Store
